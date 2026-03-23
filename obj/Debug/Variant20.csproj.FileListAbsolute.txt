@@ -1,0 +1,10 @@
+C:\Users\232909071094-9\Desktop\Variant20\Variant20\bin\Debug\Variant20.exe.config
+C:\Users\232909071094-9\Desktop\Variant20\Variant20\bin\Debug\Variant20.exe
+C:\Users\232909071094-9\Desktop\Variant20\Variant20\bin\Debug\Variant20.pdb
+C:\Users\232909071094-9\Desktop\Variant20\Variant20\obj\Debug\Variant20.csproj.AssemblyReference.cache
+C:\Users\232909071094-9\Desktop\Variant20\Variant20\obj\Debug\Variant20.Form1.resources
+C:\Users\232909071094-9\Desktop\Variant20\Variant20\obj\Debug\Variant20.Properties.Resources.resources
+C:\Users\232909071094-9\Desktop\Variant20\Variant20\obj\Debug\Variant20.csproj.GenerateResource.cache
+C:\Users\232909071094-9\Desktop\Variant20\Variant20\obj\Debug\Variant20.csproj.CoreCompileInputs.cache
+C:\Users\232909071094-9\Desktop\Variant20\Variant20\obj\Debug\Variant20.exe
+C:\Users\232909071094-9\Desktop\Variant20\Variant20\obj\Debug\Variant20.pdb

@@ -1,8 +1,15 @@
-﻿namespace WindowsFormsApp1
+﻿namespace Variant20
 {
     partial class Form1
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.TextBox txtExpression;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnExample;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Label lblInstruction;
 
         protected override void Dispose(bool disposing)
         {
@@ -13,106 +20,97 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.настройкиДвиженияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabelSpeed = new System.Windows.Forms.ToolStripStatusLabel();
-            this.menuStrip1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.txtExpression = new System.Windows.Forms.TextBox();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnExample = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.lblInstruction = new System.Windows.Forms.Label();
             this.SuspendLayout();
 
-            // timer1
-            this.timer1.Interval = 50;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // lblInstruction
+            this.lblInstruction.AutoSize = true;
+            this.lblInstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblInstruction.Location = new System.Drawing.Point(12, 15);
+            this.lblInstruction.Name = "lblInstruction";
+            this.lblInstruction.Size = new System.Drawing.Size(365, 16);
+            this.lblInstruction.TabIndex = 0;
+            this.lblInstruction.Text = "Введите арифметическое выражение (поддерживаются +, -, *, /, ^):";
 
-            // menuStrip1
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                this.настройкиToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            // txtExpression
+            this.txtExpression.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtExpression.Location = new System.Drawing.Point(12, 40);
+            this.txtExpression.Name = "txtExpression";
+            this.txtExpression.Size = new System.Drawing.Size(460, 26);
+            this.txtExpression.TabIndex = 1;
 
-            // настройкиToolStripMenuItem
-            this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                this.настройкиДвиженияToolStripMenuItem,
-                this.выходToolStripMenuItem});
-            this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
-            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-            this.настройкиToolStripMenuItem.Text = "Настройки";
+            // btnCalculate
+            this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCalculate.Location = new System.Drawing.Point(12, 80);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(110, 35);
+            this.btnCalculate.TabIndex = 2;
+            this.btnCalculate.Text = "Вычислить";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
 
-            // настройкиДвиженияToolStripMenuItem
-            this.настройкиДвиженияToolStripMenuItem.Name = "настройкиДвиженияToolStripMenuItem";
-            this.настройкиДвиженияToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.настройкиДвиженияToolStripMenuItem.Text = "Настройки движения";
-            this.настройкиДвиженияToolStripMenuItem.Click += new System.EventHandler(this.настройкиДвиженияToolStripMenuItem_Click);
+            // btnClear
+            this.btnClear.Location = new System.Drawing.Point(128, 80);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(90, 35);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "Очистить";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
 
-            // выходToolStripMenuItem
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.выходToolStripMenuItem.Text = "Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // btnExample
+            this.btnExample.Location = new System.Drawing.Point(224, 80);
+            this.btnExample.Name = "btnExample";
+            this.btnExample.Size = new System.Drawing.Size(120, 35);
+            this.btnExample.TabIndex = 4;
+            this.btnExample.Text = "Пример";
+            this.btnExample.UseVisualStyleBackColor = true;
+            this.btnExample.Click += new System.EventHandler(this.btnExample_Click);
 
-            // statusStrip1
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                this.toolStripStatusLabel1,
-                this.toolStripStatusLabelSpeed});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
+            // btnExit
+            this.btnExit.Location = new System.Drawing.Point(350, 80);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(122, 35);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Выход";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
 
-            // toolStripStatusLabel1
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(109, 17);
-            this.toolStripStatusLabel1.Text = "Скорость движения:";
-
-            // toolStripStatusLabelSpeed
-            this.toolStripStatusLabelSpeed.Name = "toolStripStatusLabelSpeed";
-            this.toolStripStatusLabelSpeed.Size = new System.Drawing.Size(37, 17);
-            this.toolStripStatusLabelSpeed.Text = "50 ms";
+            // lblResult
+            this.lblResult.AutoSize = true;
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblResult.Location = new System.Drawing.Point(12, 130);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(102, 20);
+            this.lblResult.TabIndex = 6;
+            this.lblResult.Text = "Результат:";
 
             // Form1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.ClientSize = new System.Drawing.Size(484, 161);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnExample);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.txtExpression);
+            this.Controls.Add(this.lblInstruction);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Движение прямоугольника - Вариант 20";
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
-            this.Resize += new System.EventHandler(this.Form1_Resize);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.Text = "Калькулятор выражений (Вариант 20)";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
-
-        #endregion
-
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem настройкиДвиженияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelSpeed;
     }
 }
