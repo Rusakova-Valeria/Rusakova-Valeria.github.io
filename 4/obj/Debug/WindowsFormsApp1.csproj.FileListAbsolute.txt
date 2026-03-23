@@ -1,9 +1,0 @@
-C:\Users\timof\OneDrive\Desktop\лерареспект4\лерареспект4\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
-C:\Users\timof\OneDrive\Desktop\лерареспект4\лерареспект4\obj\Debug\лерареспект4.Properties.Resources.resources
-C:\Users\timof\OneDrive\Desktop\лерареспект4\лерареспект4\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
-C:\Users\timof\OneDrive\Desktop\лерареспект4\лерареспект4\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\timof\OneDrive\Desktop\лерареспект4\лерареспект4\bin\Debug\лерареспект4.exe.config
-C:\Users\timof\OneDrive\Desktop\лерареспект4\лерареспект4\bin\Debug\лерареспект4.exe
-C:\Users\timof\OneDrive\Desktop\лерареспект4\лерареспект4\bin\Debug\лерареспект4.pdb
-C:\Users\timof\OneDrive\Desktop\лерареспект4\лерареспект4\obj\Debug\лерареспект4.exe
-C:\Users\timof\OneDrive\Desktop\лерареспект4\лерареспект4\obj\Debug\лерареспект4.pdb

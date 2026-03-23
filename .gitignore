@@ -1,0 +1,16 @@
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+*.dll
+*.exe
+*.pdb
+*.xml
+*.suo
+*.user
+.vs/
+packages/
+
+*.cache
+*.log
+[Dd]ist/
