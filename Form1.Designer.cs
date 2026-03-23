@@ -1,15 +1,23 @@
-﻿namespace Variant20
+﻿using System.Drawing;
+using System.Windows.Forms;
+using System;
+
+namespace WindowsFormsApp1
 {
     partial class Form1
     {
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.TextBox txtExpression;
-        private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnExample;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label lblResult;
-        private System.Windows.Forms.Label lblInstruction;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox5;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Button button1;
 
         protected override void Dispose(bool disposing)
         {
@@ -22,95 +30,163 @@
 
         private void InitializeComponent()
         {
-            this.txtExpression = new System.Windows.Forms.TextBox();
-            this.btnCalculate = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnExample = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.lblResult = new System.Windows.Forms.Label();
-            this.lblInstruction = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-
-            // lblInstruction
-            this.lblInstruction.AutoSize = true;
-            this.lblInstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblInstruction.Location = new System.Drawing.Point(12, 15);
-            this.lblInstruction.Name = "lblInstruction";
-            this.lblInstruction.Size = new System.Drawing.Size(365, 16);
-            this.lblInstruction.TabIndex = 0;
-            this.lblInstruction.Text = "Введите арифметическое выражение (поддерживаются +, -, *, /, ^):";
-
-            // txtExpression
-            this.txtExpression.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtExpression.Location = new System.Drawing.Point(12, 40);
-            this.txtExpression.Name = "txtExpression";
-            this.txtExpression.Size = new System.Drawing.Size(460, 26);
-            this.txtExpression.TabIndex = 1;
-
-            // btnCalculate
-            this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnCalculate.Location = new System.Drawing.Point(12, 80);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(110, 35);
-            this.btnCalculate.TabIndex = 2;
-            this.btnCalculate.Text = "Вычислить";
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
-
-            // btnClear
-            this.btnClear.Location = new System.Drawing.Point(128, 80);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(90, 35);
-            this.btnClear.TabIndex = 3;
-            this.btnClear.Text = "Очистить";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-
-            // btnExample
-            this.btnExample.Location = new System.Drawing.Point(224, 80);
-            this.btnExample.Name = "btnExample";
-            this.btnExample.Size = new System.Drawing.Size(120, 35);
-            this.btnExample.TabIndex = 4;
-            this.btnExample.Text = "Пример";
-            this.btnExample.UseVisualStyleBackColor = true;
-            this.btnExample.Click += new System.EventHandler(this.btnExample_Click);
-
-            // btnExit
-            this.btnExit.Location = new System.Drawing.Point(350, 80);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(122, 35);
-            this.btnExit.TabIndex = 5;
-            this.btnExit.Text = "Выход";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-
-            // lblResult
-            this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblResult.Location = new System.Drawing.Point(12, 130);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(102, 20);
-            this.lblResult.TabIndex = 6;
-            this.lblResult.Text = "Результат:";
-
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox1.Location = new System.Drawing.Point(504, 160);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(150, 23);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox2.Location = new System.Drawing.Point(73, 151);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(150, 23);
+            this.textBox2.TabIndex = 3;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox3.Location = new System.Drawing.Point(170, 255);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(150, 23);
+            this.textBox3.TabIndex = 6;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox4.Location = new System.Drawing.Point(170, 294);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(150, 23);
+            this.textBox4.TabIndex = 8;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox5.Location = new System.Drawing.Point(170, 335);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(150, 23);
+            this.textBox5.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.Location = new System.Drawing.Point(524, 131);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Введите X (|x| < 1):";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label2.Location = new System.Drawing.Point(112, 114);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 17);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Точность:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label3.Location = new System.Drawing.Point(42, 257);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Math.Atan(x) =";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label4.Location = new System.Drawing.Point(42, 297);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 17);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Сумма ряда:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label5.Location = new System.Drawing.Point(42, 337);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(119, 17);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Членов ряда (n):";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Location = new System.Drawing.Point(261, 183);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 30);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Вычислить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Task1.Properties.Resources.лер1;
+            this.pictureBox1.Location = new System.Drawing.Point(74, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(637, 73);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 161);
-            this.Controls.Add(this.lblResult);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnExample);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnCalculate);
-            this.Controls.Add(this.txtExpression);
-            this.Controls.Add(this.lblInstruction);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
+            this.ClientSize = new System.Drawing.Size(723, 403);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Калькулятор выражений (Вариант 20)";
+            this.Text = "Вычисление arctg(x) разложением в ряд (Вариант 20)";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
+
+        private PictureBox pictureBox1;
     }
 }

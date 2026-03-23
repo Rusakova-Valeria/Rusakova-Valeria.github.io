@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Variant20.Properties
+namespace Task1.Properties
 {
 
 
