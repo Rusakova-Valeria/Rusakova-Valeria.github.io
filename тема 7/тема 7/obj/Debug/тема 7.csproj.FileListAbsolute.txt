@@ -1,9 +1,0 @@
-C:\Users\timof\OneDrive\Desktop\тема 7 Лера\тема 7\obj\Debug\тема 7.csproj.AssemblyReference.cache
-C:\Users\timof\OneDrive\Desktop\тема 7 Лера\тема 7\obj\Debug\тема_7.Properties.Resources.resources
-C:\Users\timof\OneDrive\Desktop\тема 7 Лера\тема 7\obj\Debug\тема 7.csproj.GenerateResource.cache
-C:\Users\timof\OneDrive\Desktop\тема 7 Лера\тема 7\obj\Debug\тема 7.csproj.CoreCompileInputs.cache
-C:\Users\timof\OneDrive\Desktop\тема 7 Лера\тема 7\bin\Debug\тема 7.exe.config
-C:\Users\timof\OneDrive\Desktop\тема 7 Лера\тема 7\bin\Debug\тема 7.exe
-C:\Users\timof\OneDrive\Desktop\тема 7 Лера\тема 7\bin\Debug\тема 7.pdb
-C:\Users\timof\OneDrive\Desktop\тема 7 Лера\тема 7\obj\Debug\тема 7.exe
-C:\Users\timof\OneDrive\Desktop\тема 7 Лера\тема 7\obj\Debug\тема 7.pdb
